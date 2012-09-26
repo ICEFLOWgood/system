@@ -55,6 +55,8 @@ class MyHandler(SCGIHandler):
 				opt['all'](env,bodysize,input,output,result[1])
 		elif '?' in  code:
 			second_url = url[2].split('?')
+			print second_url[1].split('&')
+			print second_url
 			if '&' in  code:
 				result_url = second_url[1].split('&')
 				for a in result_url:
